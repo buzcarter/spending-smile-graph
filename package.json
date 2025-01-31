@@ -1,0 +1,38 @@
+{
+  "name": "spending-smile-graph",
+  "version": "1.0.0",
+  "description": "Simple retirment spending smile curve visualizer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buzcarter/spending-smile-graph.git"
+  },
+  "type": "module",
+  "browser": "index.html",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .",
+    "build": "echo 'No build step needed - static files'"
+  },
+  "bugs": {
+    "url": "https://github.com/buzcarter/spending-smile-graph/issues"
+  },
+  "homepage": "https://github.com/buzcarter/spending-smile-graph#readme",
+  "license": "ISC",
+  "author": "B.Carter",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "keywords": [
+    "withdraw",
+    "vwr",
+    "variable",
+    "withdraw",
+    "rate",
+    "retirment",
+    "spending",
+    "smile",
+    "graph",
+    "visualizer",
+    "curve"
+  ]
+}

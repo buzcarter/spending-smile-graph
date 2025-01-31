@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+canvas {
+  border: 1px solid #000;
+}
+
+.subtle-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.subtle-button:hover {
+  background-color: #eee;
+  color: #333;
+}
+
+.rates-table-container {
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.rates-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.rates-table th,
+.rates-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.rates-table th {
+  background-color: #f8f8f8;
+  position: sticky;
+  top: 0;
+}
+
+.settings-form {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.settings-form fieldset {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.settings-form legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    flex: 0 0 200px;
+    margin-right: 1rem;
+}
+
+.form-group input {
+    width: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

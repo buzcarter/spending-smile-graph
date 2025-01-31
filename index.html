@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Spending &ldquo;Smile&rdquo; Curve</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <head>
+            <h1>Retirement Spending &ldquo;Smile&rdquo; Curve</h1>
+            <p>Adjust spending (withdraw rate) between 0% and 10%</p>
+        </head>
+
+        <form id="scenarioForm" class="settings-form">
+            <fieldset>
+                <legend>Scenario Settings</legend>
+
+                <div class="form-group">
+                    <label for="currentAge">Current Age</label>
+                    <input type="number" id="currentAge" name="currentAge" min="50" max="90" value="61" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="startYear">Start Year</label>
+                    <input type="number" id="startYear" name="startYear" min="2023" max="2050" value="2025" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="planDuration">Plan Duration (years)</label>
+                    <input type="number" id="planDuration" name="planDuration" min="10" max="50" value="32" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="referenceRate">Reference Withdrawal Rate (%)</label>
+                    <input type="number" id="referenceRate" name="referenceRate" min="0" max="10" step="0.25" value="4"
+                        required>
+                </div>
+
+                <button type="submit" class="subtle-button">Update Scenario</button>
+            </fieldset>
+        </form>
+
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <section>
+            Display along x-axis:
+            <label>
+                <input type="radio" name="displayMode" value="year" checked> Year
+            </label>
+            <label>
+                <input type="radio" name="displayMode" value="age"> Age
+            </label>
+            <label>
+                <input type="radio" name="displayMode" value="planYear"> Plan Year
+            </label>
+        </section>
+        <button id="getRatesButton" class="subtle-button">Get Annual Rates</button>
+        <div id="ratesTable" class="rates-table-container"></div>
+        <footer>
+            <p><a href="https://github.com/buzcarter/spending-smile-graph#readme">Project Home Page on GitHub</a></p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
